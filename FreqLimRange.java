@@ -1,5 +1,7 @@
 // Problem: https://practice.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab
 
+// TC: O(2N), SC: O(N)
+
 //{ Driver Code Starts
 import java.io.*;
 import java.util.*;

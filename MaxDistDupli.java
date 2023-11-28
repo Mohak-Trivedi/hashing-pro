@@ -5,6 +5,8 @@
 // https://github.com/Mohak-Trivedi/learn-hashing/blob/main/Tut4duplDist.java
 // instead of returning true if duplicate found within k range, return the maximum distance b/w duplicates
 
+// TC: O(2N), SC: O(N)
+
 //{ Driver Code Starts
 import java.util.Scanner;
 import java.util.*;

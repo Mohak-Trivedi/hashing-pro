@@ -1,6 +1,7 @@
 // Problem:
 // https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1?utm_source=geeksforgeeks&utm_medium=ml_article_practice_tab&utm_campaign=article_practice_tab
 
+// TC: O(N), SC: O(N)
 // Variation of TwoSum
 // BUILD TOTALPAIRS WHILE BUILDING FMAP, NOT AFTER, ELSE DUPLICATE PAIRS ARE CONSIDERED.
 

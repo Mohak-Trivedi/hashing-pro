@@ -5,7 +5,11 @@ Optimized approach: TC: O(N), SC: O(N)
 Maintain HashMap<cumSum, index>
 For current cumSum, if you find cumSum%k in hashmap and its difference from current index >=2, return true. If you travered entire array but never returned true, return false.
 Edge case : array traveresed until now is a good subarray itself -> current cumSum%k==0 && current index >= 1, then return true.
-CAUTION: Put current cumSum with its index in HashMap if and only if it that cumSum is not present in HashMap. If you do, then the latest index value will get stored for that cumSum, whereas we must maintain the leftmost index; and due to this we will get false even though the sub-array has length i.e. r - (l - 1) >= 2 i.e. i - hmap.containsKey(cumSumMod) >= 2 will give false even though the sub-array has a length >=2 because the hmap.containsKey(cumSumMod) returns rightmost index rather than leftmost index.
+CAUTION: Put current cumSum with its index in HashMap if and only if it that cumSum is not present in HashMap. 
+If you do, then the latest index value will get stored for that cumSum, whereas we must maintain the leftmost index; 
+and due to this we will get false even though the sub-array has length i.e. r - (l - 1) >= 2 i.e. i - hmap.containsKey(cumSumMod) >= 2 will 
+give false even though the sub-array has a length >=2 because the hmap.containsKey(cumSumMod) returns rightmost index rather than leftmost index.
+E.g. nums[] = [5,0,0,0], k = 3
 */
 
 /*

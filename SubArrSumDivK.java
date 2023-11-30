@@ -1,5 +1,6 @@
 // Problem: https://leetcode.com/problems/subarray-sums-divisible-by-k/description
 
+// TC: O(N), SC: O(N)
 // A count variation of Good Subarray problem: https://github.com/Mohak-Trivedi/hashing-pro/blob/main/GoodSubarr.java
 // CAUTION: Edge case of -ve cumulative sum modulo, must be handled using +k 
 

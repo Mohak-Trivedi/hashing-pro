@@ -43,16 +43,32 @@ class Solution {
     // Function to count the frequency of all elements from 1 to N in the array.
     public static void frequencyCount(int arr[], int N, int P) {
         // code here
-        HashMap<Integer, Integer> hmap = new HashMap<Integer, Integer>();
-        for (int num : arr) {
-            int freq = hmap.getOrDefault(num, 0) + 1;
-            hmap.put(num, freq);
-        }
+        // HashMap<Integer, Integer> hmap = new HashMap<Integer, Integer>();
+        // for (int num : arr) {
+        // int freq = hmap.getOrDefault(num, 0) + 1;
+        // hmap.put(num, freq);
+        // }
 
-        for (int idx = 0; idx < N; idx++) {
-            int num = idx + 1;
+        // for (int idx = 0; idx < N; idx++) {
+        // int num = idx + 1;
 
-            arr[idx] = hmap.getOrDefault(num, 0);
+        // arr[idx] = hmap.getOrDefault(num, 0);
+        // }
+
+        // return;
+
+        for (int i = 0; i < N; i++) {
+            int num = i + 1;
+            int cnt = 0;
+
+            for (int j = 0; j < N; j++) {
+                int ele = arr[j];
+                if (ele == num) {
+                    cnt++;
+                }
+            }
+
+            arr[i] = cnt;
         }
 
         return;
